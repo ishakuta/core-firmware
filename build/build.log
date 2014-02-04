@@ -1,0 +1,397 @@
+rm -f  obj/src/application.o obj/src/main.o obj/src/newlib_stubs.o obj/src/spark_utilities.o obj/src/spark_wiring.o obj/src/spark_wiring_i2c.o obj/src/spark_wiring_interrupts.o obj/src/spark_wiring_ipaddress.o obj/src/spark_wiring_network.o obj/src/spark_wiring_print.o obj/src/spark_wiring_servo.o obj/src/spark_wiring_spi.o obj/src/spark_wiring_stream.o obj/src/spark_wiring_string.o obj/src/spark_wiring_tcpclient.o obj/src/spark_wiring_tcpserver.o obj/src/spark_wiring_udp.o obj/src/spark_wiring_usartserial.o obj/src/spark_wiring_usbserial.o obj/src/spark_wlan.o obj/src/stm32_it.o obj/src/usb_desc.o obj/src/usb_endp.o obj/src/usb_istr.o obj/src/usb_prop.o obj/src/wifi_credentials_reader.o obj/src/DallasTemperature.o obj/src/OneWire.o obj/startup/startup_stm32f10x_md.o  obj/src/application.o.d obj/src/main.o.d obj/src/newlib_stubs.o.d obj/src/spark_utilities.o.d obj/src/spark_wiring.o.d obj/src/spark_wiring_i2c.o.d obj/src/spark_wiring_interrupts.o.d obj/src/spark_wiring_ipaddress.o.d obj/src/spark_wiring_network.o.d obj/src/spark_wiring_print.o.d obj/src/spark_wiring_servo.o.d obj/src/spark_wiring_spi.o.d obj/src/spark_wiring_stream.o.d obj/src/spark_wiring_string.o.d obj/src/spark_wiring_tcpclient.o.d obj/src/spark_wiring_tcpserver.o.d obj/src/spark_wiring_udp.o.d obj/src/spark_wiring_usartserial.o.d obj/src/spark_wiring_usbserial.o.d obj/src/spark_wlan.o.d obj/src/stm32_it.o.d obj/src/usb_desc.o.d obj/src/usb_endp.o.d obj/src/usb_istr.o.d obj/src/usb_prop.o.d obj/src/wifi_credentials_reader.o.d obj/src/DallasTemperature.o.d obj/src/OneWire.o.d obj/startup/startup_stm32f10x_md.o.d core-firmware.elf core-firmware.bin core-firmware.hex core-firmware.map
+
+Clean core-common-lib
+rm -f obj/CC3000_Host_Driver/cc3000_common.o obj/CC3000_Host_Driver/evnt_handler.o obj/CC3000_Host_Driver/hci.o obj/CC3000_Host_Driver/netapp.o obj/CC3000_Host_Driver/nvmem.o obj/CC3000_Host_Driver/security.o obj/CC3000_Host_Driver/socket.o obj/CC3000_Host_Driver/wlan.o obj/SPARK_Firmware_Driver/src/cc3000_spi.o obj/SPARK_Firmware_Driver/src/hw_config.o obj/SPARK_Firmware_Driver/src/sst25vf_spi.o obj/SPARK_Firmware_Driver/src/system_stm32f10x.o obj/SPARK_Firmware_Driver/src/usb_pwr.o obj/STM32F10x_StdPeriph_Driver/src/misc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o obj/STM32_USB-FS-Device_Driver/src/usb_core.o obj/STM32_USB-FS-Device_Driver/src/usb_init.o obj/STM32_USB-FS-Device_Driver/src/usb_int.o obj/STM32_USB-FS-Device_Driver/src/usb_mem.o obj/STM32_USB-FS-Device_Driver/src/usb_regs.o obj/STM32_USB-FS-Device_Driver/src/usb_sil.o   obj/CC3000_Host_Driver/cc3000_common.o.d obj/CC3000_Host_Driver/evnt_handler.o.d obj/CC3000_Host_Driver/hci.o.d obj/CC3000_Host_Driver/netapp.o.d obj/CC3000_Host_Driver/nvmem.o.d obj/CC3000_Host_Driver/security.o.d obj/CC3000_Host_Driver/socket.o.d obj/CC3000_Host_Driver/wlan.o.d obj/SPARK_Firmware_Driver/src/cc3000_spi.o.d obj/SPARK_Firmware_Driver/src/hw_config.o.d obj/SPARK_Firmware_Driver/src/sst25vf_spi.o.d obj/SPARK_Firmware_Driver/src/system_stm32f10x.o.d obj/SPARK_Firmware_Driver/src/usb_pwr.o.d obj/STM32F10x_StdPeriph_Driver/src/misc.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o.d obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o.d obj/STM32_USB-FS-Device_Driver/src/usb_core.o.d obj/STM32_USB-FS-Device_Driver/src/usb_init.o.d obj/STM32_USB-FS-Device_Driver/src/usb_int.o.d obj/STM32_USB-FS-Device_Driver/src/usb_mem.o.d obj/STM32_USB-FS-Device_Driver/src/usb_regs.o.d obj/STM32_USB-FS-Device_Driver/src/usb_sil.o.d   libcore-common-lib.a
+ 
+
+Clean core-communication-lib
+rm -f obj/lib/tropicssl/library/aes.o obj/lib/tropicssl/library/bignum.o obj/lib/tropicssl/library/padlock.o obj/lib/tropicssl/library/rsa.o obj/lib/tropicssl/library/sha1.o obj/src/coap.o obj/src/handshake.o obj/src/spark_protocol.o  obj/lib/tropicssl/library/aes.o.d obj/lib/tropicssl/library/bignum.o.d obj/lib/tropicssl/library/padlock.o.d obj/lib/tropicssl/library/rsa.o.d obj/lib/tropicssl/library/sha1.o.d obj/src/coap.o.d obj/src/handshake.o.d obj/src/spark_protocol.o.d  libcore-communication-lib.a
+ 
+
+Building core-common-lib
+Building file: ../CC3000_Host_Driver/cc3000_common.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/cc3000_common.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/cc3000_common.o ../CC3000_Host_Driver/cc3000_common.c
+
+Building file: ../CC3000_Host_Driver/evnt_handler.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/evnt_handler.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/evnt_handler.o ../CC3000_Host_Driver/evnt_handler.c
+
+Building file: ../CC3000_Host_Driver/hci.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/hci.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/hci.o ../CC3000_Host_Driver/hci.c
+
+Building file: ../CC3000_Host_Driver/netapp.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/netapp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/netapp.o ../CC3000_Host_Driver/netapp.c
+
+Building file: ../CC3000_Host_Driver/nvmem.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/nvmem.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/nvmem.o ../CC3000_Host_Driver/nvmem.c
+
+Building file: ../CC3000_Host_Driver/security.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/security.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/security.o ../CC3000_Host_Driver/security.c
+
+Building file: ../CC3000_Host_Driver/socket.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/socket.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/socket.o ../CC3000_Host_Driver/socket.c
+
+Building file: ../CC3000_Host_Driver/wlan.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/CC3000_Host_Driver/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/CC3000_Host_Driver/wlan.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/CC3000_Host_Driver/wlan.o ../CC3000_Host_Driver/wlan.c
+
+Building file: ../SPARK_Firmware_Driver/src/cc3000_spi.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/SPARK_Firmware_Driver/src/cc3000_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/SPARK_Firmware_Driver/src/cc3000_spi.o ../SPARK_Firmware_Driver/src/cc3000_spi.c
+
+Building file: ../SPARK_Firmware_Driver/src/hw_config.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/SPARK_Firmware_Driver/src/hw_config.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/SPARK_Firmware_Driver/src/hw_config.o ../SPARK_Firmware_Driver/src/hw_config.c
+
+Building file: ../SPARK_Firmware_Driver/src/sst25vf_spi.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/SPARK_Firmware_Driver/src/sst25vf_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/SPARK_Firmware_Driver/src/sst25vf_spi.o ../SPARK_Firmware_Driver/src/sst25vf_spi.c
+
+Building file: ../SPARK_Firmware_Driver/src/system_stm32f10x.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/SPARK_Firmware_Driver/src/system_stm32f10x.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/SPARK_Firmware_Driver/src/system_stm32f10x.o ../SPARK_Firmware_Driver/src/system_stm32f10x.c
+
+Building file: ../SPARK_Firmware_Driver/src/usb_pwr.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/SPARK_Firmware_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/SPARK_Firmware_Driver/src/usb_pwr.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/SPARK_Firmware_Driver/src/usb_pwr.o ../SPARK_Firmware_Driver/src/usb_pwr.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/misc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/misc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/misc.o ../STM32F10x_StdPeriph_Driver/src/misc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c
+
+Building file: ../STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32F10x_StdPeriph_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o ../STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_core.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_core.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_core.o ../STM32_USB-FS-Device_Driver/src/usb_core.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_init.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_init.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_init.o ../STM32_USB-FS-Device_Driver/src/usb_init.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_int.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_int.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_int.o ../STM32_USB-FS-Device_Driver/src/usb_int.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_mem.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_mem.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_mem.o ../STM32_USB-FS-Device_Driver/src/usb_mem.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_regs.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_regs.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_regs.o ../STM32_USB-FS-Device_Driver/src/usb_regs.c
+
+Building file: ../STM32_USB-FS-Device_Driver/src/usb_sil.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/STM32_USB-FS-Device_Driver/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../CC3000_Host_Driver -I../SPARK_Firmware_Driver/inc -I../STM32F10x_StdPeriph_Driver/inc -I../STM32_USB-FS-Device_Driver/inc -I../CMSIS/Include -I../CMSIS/Device/ST/STM32F10x/Include -I. -ffunction-sections -Wall -fmessage-length=0  -MD -MP -MF obj/STM32_USB-FS-Device_Driver/src/usb_sil.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -c -o obj/STM32_USB-FS-Device_Driver/src/usb_sil.o ../STM32_USB-FS-Device_Driver/src/usb_sil.c
+
+Building target: libcore-common-lib.a
+Invoking: ARM GCC Archiver
+arm-none-eabi-ar -r libcore-common-lib.a obj/CC3000_Host_Driver/cc3000_common.o obj/CC3000_Host_Driver/evnt_handler.o obj/CC3000_Host_Driver/hci.o obj/CC3000_Host_Driver/netapp.o obj/CC3000_Host_Driver/nvmem.o obj/CC3000_Host_Driver/security.o obj/CC3000_Host_Driver/socket.o obj/CC3000_Host_Driver/wlan.o obj/SPARK_Firmware_Driver/src/cc3000_spi.o obj/SPARK_Firmware_Driver/src/hw_config.o obj/SPARK_Firmware_Driver/src/sst25vf_spi.o obj/SPARK_Firmware_Driver/src/system_stm32f10x.o obj/SPARK_Firmware_Driver/src/usb_pwr.o obj/STM32F10x_StdPeriph_Driver/src/misc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o obj/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o obj/STM32_USB-FS-Device_Driver/src/usb_core.o obj/STM32_USB-FS-Device_Driver/src/usb_init.o obj/STM32_USB-FS-Device_Driver/src/usb_int.o obj/STM32_USB-FS-Device_Driver/src/usb_mem.o obj/STM32_USB-FS-Device_Driver/src/usb_regs.o obj/STM32_USB-FS-Device_Driver/src/usb_sil.o
+ 
+
+Building core-communication-lib
+Building file: ../lib/tropicssl/library/aes.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/aes.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -c -o obj/lib/tropicssl/library/aes.o ../lib/tropicssl/library/aes.c
+
+Building file: ../lib/tropicssl/library/bignum.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/bignum.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -c -o obj/lib/tropicssl/library/bignum.o ../lib/tropicssl/library/bignum.c
+
+Building file: ../lib/tropicssl/library/padlock.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/padlock.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -c -o obj/lib/tropicssl/library/padlock.o ../lib/tropicssl/library/padlock.c
+
+Building file: ../lib/tropicssl/library/rsa.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/rsa.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -c -o obj/lib/tropicssl/library/rsa.o ../lib/tropicssl/library/rsa.c
+
+Building file: ../lib/tropicssl/library/sha1.c
+Invoking: ARM GCC C Compiler
+mkdir -p obj/lib/tropicssl/library/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/lib/tropicssl/library/sha1.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -c -o obj/lib/tropicssl/library/sha1.o ../lib/tropicssl/library/sha1.c
+
+Building file: ../src/coap.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/src/coap.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -fno-exceptions -fno-rtti -c -o obj/src/coap.o ../src/coap.cpp
+
+Building file: ../src/handshake.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/src/handshake.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -fno-exceptions -fno-rtti -c -o obj/src/handshake.o ../src/handshake.cpp
+
+Building file: ../src/spark_protocol.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../lib/tropicssl/include -I../src -I. -ffunction-sections -fmessage-length=0 -Wall -MD -MP -MF obj/src/spark_protocol.o.d -DSPARK_PRODUCT_ID=65535 -DPRODUCT_FIRMWARE_VERSION=65535 -fno-exceptions -fno-rtti -c -o obj/src/spark_protocol.o ../src/spark_protocol.cpp
+
+Building target: libcore-communication-lib.a
+Invoking: ARM GCC Archiver
+arm-none-eabi-ar -r libcore-communication-lib.a obj/lib/tropicssl/library/aes.o obj/lib/tropicssl/library/bignum.o obj/lib/tropicssl/library/padlock.o obj/lib/tropicssl/library/rsa.o obj/lib/tropicssl/library/sha1.o obj/src/coap.o obj/src/handshake.o obj/src/spark_protocol.o
+ 
+
+Building file: ../src/application.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/application.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/application.o ../src/application.cpp
+
+Building file: ../src/main.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/main.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/main.o ../src/main.cpp
+
+Building file: ../src/newlib_stubs.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/newlib_stubs.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/newlib_stubs.o ../src/newlib_stubs.cpp
+
+Building file: ../src/spark_utilities.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_utilities.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_utilities.o ../src/spark_utilities.cpp
+
+Building file: ../src/spark_wiring.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring.o ../src/spark_wiring.cpp
+
+Building file: ../src/spark_wiring_i2c.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_i2c.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_i2c.o ../src/spark_wiring_i2c.cpp
+
+Building file: ../src/spark_wiring_interrupts.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_interrupts.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_interrupts.o ../src/spark_wiring_interrupts.cpp
+
+Building file: ../src/spark_wiring_ipaddress.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_ipaddress.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_ipaddress.o ../src/spark_wiring_ipaddress.cpp
+
+Building file: ../src/spark_wiring_network.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_network.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_network.o ../src/spark_wiring_network.cpp
+
+Building file: ../src/spark_wiring_print.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_print.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_print.o ../src/spark_wiring_print.cpp
+
+Building file: ../src/spark_wiring_servo.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_servo.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_servo.o ../src/spark_wiring_servo.cpp
+
+Building file: ../src/spark_wiring_spi.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_spi.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_spi.o ../src/spark_wiring_spi.cpp
+
+Building file: ../src/spark_wiring_stream.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_stream.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_stream.o ../src/spark_wiring_stream.cpp
+
+Building file: ../src/spark_wiring_string.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_string.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_string.o ../src/spark_wiring_string.cpp
+
+Building file: ../src/spark_wiring_tcpclient.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_tcpclient.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_tcpclient.o ../src/spark_wiring_tcpclient.cpp
+
+Building file: ../src/spark_wiring_tcpserver.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_tcpserver.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_tcpserver.o ../src/spark_wiring_tcpserver.cpp
+
+Building file: ../src/spark_wiring_udp.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_udp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_udp.o ../src/spark_wiring_udp.cpp
+
+Building file: ../src/spark_wiring_usartserial.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_usartserial.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_usartserial.o ../src/spark_wiring_usartserial.cpp
+
+Building file: ../src/spark_wiring_usbserial.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wiring_usbserial.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wiring_usbserial.o ../src/spark_wiring_usbserial.cpp
+
+Building file: ../src/spark_wlan.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/spark_wlan.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/spark_wlan.o ../src/spark_wlan.cpp
+
+Building file: ../src/stm32_it.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/stm32_it.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/stm32_it.o ../src/stm32_it.cpp
+
+Building file: ../src/usb_desc.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/usb_desc.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/usb_desc.o ../src/usb_desc.cpp
+
+Building file: ../src/usb_endp.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/usb_endp.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/usb_endp.o ../src/usb_endp.cpp
+
+Building file: ../src/usb_istr.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/usb_istr.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/usb_istr.o ../src/usb_istr.cpp
+
+Building file: ../src/usb_prop.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/usb_prop.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/usb_prop.o ../src/usb_prop.cpp
+
+Building file: ../src/wifi_credentials_reader.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/wifi_credentials_reader.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/wifi_credentials_reader.o ../src/wifi_credentials_reader.cpp
+
+Building file: ../src/DallasTemperature.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/DallasTemperature.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/DallasTemperature.o ../src/DallasTemperature.cpp
+
+Building file: ../src/OneWire.cpp
+Invoking: ARM GCC CPP Compiler
+mkdir -p obj/src/
+arm-none-eabi-gcc -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF obj/src/OneWire.o.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE -fno-exceptions -fno-rtti  -c -o obj/src/OneWire.o ../src/OneWire.cpp
+
+Building file: ../startup/startup_stm32f10x_md.S
+Invoking: ARM GCC Assember
+mkdir -p obj/startup/
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m3 -mthumb  -x assembler-with-cpp -fmessage-length=0 -c -o obj/startup/startup_stm32f10x_md.o ../startup/startup_stm32f10x_md.S
+
+Building target: core-firmware.elf
+Invoking: ARM GCC C++ Linker
+arm-none-eabi-g++ -g3 -gdwarf-2 -Os -mcpu=cortex-m3 -mthumb  -I../inc -I../../core-common-lib/CMSIS/Include -I../../core-common-lib/CMSIS/Device/ST/STM32F10x/Include -I../../core-common-lib/STM32F10x_StdPeriph_Driver/inc -I../../core-common-lib/STM32_USB-FS-Device_Driver/inc -I../../core-common-lib/CC3000_Host_Driver -I../../core-common-lib/SPARK_Firmware_Driver/inc -I../../core-communication-lib/lib/tropicssl/include -I../../core-communication-lib/src -I. -ffunction-sections -Wall -fmessage-length=0 -MD -MP -MF core-firmware.elf.d -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DDFU_BUILD_ENABLE  obj/src/application.o obj/src/main.o obj/src/newlib_stubs.o obj/src/spark_utilities.o obj/src/spark_wiring.o obj/src/spark_wiring_i2c.o obj/src/spark_wiring_interrupts.o obj/src/spark_wiring_ipaddress.o obj/src/spark_wiring_network.o obj/src/spark_wiring_print.o obj/src/spark_wiring_servo.o obj/src/spark_wiring_spi.o obj/src/spark_wiring_stream.o obj/src/spark_wiring_string.o obj/src/spark_wiring_tcpclient.o obj/src/spark_wiring_tcpserver.o obj/src/spark_wiring_udp.o obj/src/spark_wiring_usartserial.o obj/src/spark_wiring_usbserial.o obj/src/spark_wlan.o obj/src/stm32_it.o obj/src/usb_desc.o obj/src/usb_endp.o obj/src/usb_istr.o obj/src/usb_prop.o obj/src/wifi_credentials_reader.o obj/src/DallasTemperature.o obj/src/OneWire.o obj/startup/startup_stm32f10x_md.o --output core-firmware.elf -T../linker/linker_stm32f10x_md_dfu.ld -nostartfiles -Xlinker --gc-sections  -L../../core-common-lib/build -lcore-common-lib -L../../core-communication-lib/build -lcore-communication-lib -Wl,-Map,core-firmware.map
+
+Invoking: ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O binary core-firmware.elf core-firmware.bin
+
+Invoking: ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O ihex core-firmware.elf core-firmware.hex
+
+Invoking: ARM GNU Print Size
+arm-none-eabi-size --format=berkeley core-firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+  70212	   2912	  11568	  84692	  14ad4	core-firmware.elf
+

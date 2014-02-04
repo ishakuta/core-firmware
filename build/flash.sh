@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Flashing..."
+sudo dfu-util -d 1d50:607f -a 0 -s 0x08005000:leave -D core-firmware.bin
+echo "Done"

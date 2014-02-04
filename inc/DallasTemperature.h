@@ -1,0 +1,1 @@
+/home/ivan/Projects/spark/DallasTemperature_SparkCore/DallasTemperature.h
