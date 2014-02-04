@@ -1,0 +1,6 @@
+[submodule "core-communication"]
+	path = core-communication
+	url = git@github.com:spark/core-communication-lib.git
+[submodule "core-common"]
+	path = core-common
+	url = git@github.com:spark/core-common-lib.git
