@@ -40,6 +40,10 @@ CPPSRC += $(TARGET_SRC_PATH)/usb_istr.cpp
 CPPSRC += $(TARGET_SRC_PATH)/usb_prop.cpp
 CPPSRC += $(TARGET_SRC_PATH)/wifi_credentials_reader.cpp
 
+# https://github.com/justinatomatic/DallasTemperature_SparkCore
+CPPSRC += $(TARGET_SRC_PATH)/DallasTemperature.cpp
+CPPSRC += $(TARGET_SRC_PATH)/OneWire.cpp
+
 # ASM source files included in this build.
 ASRC +=
 
