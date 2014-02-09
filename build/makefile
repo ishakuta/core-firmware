@@ -15,7 +15,7 @@ MKDIR = mkdir -p
 # Recursive wildcard function
 rwildcard = $(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
-# Define the build path, this is where all of the dependancies and
+# Define the build path, this is where all of the dependencies and
 # object files will be placed.
 # Note: Currently set to <project>/build/obj directory and set relative to
 # the dir which makefile is invoked. If the makefile is moved to the project
@@ -24,9 +24,9 @@ rwildcard = $(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2
 BUILD_PATH = obj
 
 # Path to the root of source files, in this case root of the project to
-# inclue ../src and ../lib dirs.
+# include ../src and ../lib dirs.
 # Note: Consider relocating source files in lib to src, or build a
-#       seperate library.
+#       separate library.
 SRC_PATH = ..
 
 # Target this makefile is building.
@@ -39,8 +39,8 @@ SRC_MAKEFILES := $(call rwildcard,$(SRC_PATH)/,build.mk)
 include $(SRC_MAKEFILES)
 
 # Paths to dependant projects, referenced from root of this project
-LIB_CORE_COMMON_PATH = ../core-common-lib
-LIB_CORE_COMMUNICATION_PATH = ../core-communication-lib
+LIB_CORE_COMMON_PATH = lib/core-common
+LIB_CORE_COMMUNICATION_PATH = lib/core-communication
 
 # Additional include directories, applied to objects built for this target.
 INCLUDE_DIRS += $(LIB_CORE_COMMON_PATH)/CMSIS/Include
